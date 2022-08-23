@@ -1,0 +1,464 @@
+/**************************/
+/* BELOW 1616px */
+/**************************/
+
+/* @media (max-width: 101em) {
+  .heading-primary {
+    font-size: 15rem;
+  }
+} */
+
+/**************************/
+/* BELOW 1488px */
+/**************************/
+
+@media (max-width: 94em) {
+  .mypic {
+    height: 15rem;
+  }
+
+  .grid {
+    column-gap: 3.5rem;
+    row-gap: 6rem;
+  }
+
+  .skills {
+    margin: 0rem 3rem 10rem 3rem;
+  }
+
+  .works {
+    margin: 0 0 5rem 0;
+  }
+
+  .work-img {
+    width: 100%;
+  }
+
+  .skills {
+    margin: 0rem 0 10rem 0;
+  }
+
+  .contact {
+    font-size: 3rem;
+  }
+}
+
+/**************************/
+/* BELOW 1216px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 76em) {
+  .container {
+    padding: 0 4rem;
+  }
+
+  .name-kanji {
+    margin-top: -1rem;
+  }
+
+  .introduce {
+    margin-bottom: 8rem;
+  }
+
+  .introduce-detail {
+    column-gap: 2rem;
+  }
+
+  .aboutme {
+    margin-bottom: 5rem;
+  }
+
+  .works {
+  
+    column-gap: 2rem;
+  }
+
+  .work-img {
+    width: 85%;
+  }
+
+  .work-01 {
+    margin-bottom: 4rem;
+  }
+
+  .contact {
+    font-size: 3rem;
+  }
+}
+
+
+
+/**************************/
+/* BELOW 1056px (Tablets) */
+/**************************/
+
+@media (max-width: 66em) {
+
+  .container {
+  padding: 0 2rem;
+ 
+  }
+
+  .section-header {
+    margin-top: 50rem;
+    margin-left: 0rem
+  }
+
+  .introduce-detail {
+    display: inline-block;
+  }
+
+  .mypic {
+    margin-bottom: 4rem;
+    box-shadow: -3rem 2rem 0px #dd2d67;
+  }
+
+  .container-num {
+    display: initial;
+    margin-bottom: 0rem;
+  }
+
+  .pc {
+    display: none !important;
+  }
+  .sp {
+    display: block !important;
+    width: 100%;
+  }
+  .sp-2 {
+    margin-bottom: 5rem;
+  }
+
+  .number-text-box {
+    margin-bottom: 2rem;
+  }
+
+  .number-flex .number-text-box .detail {
+    margin-bottom: 0;
+  }
+
+  .number-flex {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+  }
+
+  .lazy-img-flex {
+    order: 1;
+  }
+
+  .detail {
+    margin-bottom: 2rem;
+  }
+
+  .number-img {
+    margin-bottom: 4rem;
+  }
+
+  .introduce-text {
+    margin-left: -3rem;
+  }
+
+  .br-sm {
+    display: inline;
+  }
+
+  .contact {
+    line-height: 4rem;
+  }
+
+  .section-skills {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+
+  .skills {
+    margin: 0 1rem 10rem 1rem;
+  }
+
+  .gallery {
+    margin-bottom: 3rem;
+  }
+
+.certificate-detail{
+  font-size: 0.8rem;
+  padding-left: 0;
+
+}
+.certificate-length{
+  font-size: 0.8rem;
+}
+}
+
+/* .gallery{
+    display: inline-block;
+    padding-bottom: 2rem;
+} */
+
+/**************************/
+/* BELOW 864px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 55em) {
+  .hero-text {
+    display: none;
+  }
+
+  .lang{
+    margin-bottom: 4rem;
+  }
+
+  .subheading{
+    margin-top: 3rem;
+  }
+
+  .heading-secondary {
+    margin-bottom: 2rem;
+  }
+
+
+ 
+
+  /* .heading-primary {
+    display: block;
+    font-size: 7rem;
+  } */
+
+  /* .name-kanji {
+    display: block;
+    font-size: 7rem;
+  } */
+
+  .hero-description {
+    display: inline-block;
+  }
+
+
+  .section-skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .works {
+    display: inline-block;
+    padding-bottom: 0;
+    margin-bottom: 2rem;
+   
+  }
+
+
+  .work {
+    margin-bottom: 3rem;
+  }
+
+  .btn,
+.btn:link,
+.btn:visited {
+  margin-top: 0rem;
+}
+
+.gallery {
+  gap: 1rem;
+  padding: 0;
+}
+
+
+}
+
+/**************************/
+/* BELOW 736px  */
+/**************************/
+@media (max-width: 46em) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  /* ///// mobile navigation /////  */
+  /* 
+  .nav {
+    opacity: 0;
+  } */
+
+  /* .btn-mobile-nav {
+  } */
+
+  .icon-mobile-open {
+    opacity: 1;
+    position: fixed;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.459);
+    border: none;
+    height: 3rem;
+    width: 3rem;
+
+    top: 0.2rem;
+    right: 0.2rem;
+    z-index: 2;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .icon-mobile-close {
+    /* opacity: 1; */
+    position: fixed;
+    /* color: #ccc; */
+    /* background-color: rgba(255, 255, 255, 0.459); */
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    top: 0.2rem;
+    right: 0.2rem;
+    z-index: 2;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: #ccc;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    background: #555;
+  }
+
+  .mobile-menu-item {
+    width: 100%;
+    height: auto;
+    padding: 0.5em 1em;
+    text-align: center;
+    color: #fff;
+
+    box-sizing: border-box;
+  }
+
+  /* before */
+  .mobile-menu {
+    pointer-events: none;
+    transition: opacity 0.3s linear;
+    opacity: 0;
+  }
+
+  .icon-mobile-open {
+    opacity: 1;
+  }
+
+  /* .icon-mobile-close {
+    opacity: 0;
+  } */
+
+  /* after  */
+  .mobile-menu.is-active {
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+  .icon-mobile-open.is-active {
+    opacity: 0;
+  }
+  /* 
+  .icon-mobile-close.is-active {
+    opacity: 1;
+  } */
+
+  /* ///// till here mobile navigation /////  */
+
+  .header {
+    margin-top: 15rem;
+  }
+
+  /* .heading-primary {
+    font-size: 7rem;
+  } */
+
+  .name-kanji {
+    font-size: 5rem;
+    margin-top: -0.8rem;
+  }
+
+  .mypic {
+    height: 15rem;
+  }
+
+  .introduce-text {
+   
+    font-size: 1.4rem;
+  }
+
+  .language {
+    font-size: 0.5rem;
+  }
+
+  /* .works {
+    margin: 0 3rem 7rem 3rem;
+  } */
+
+  .section-skills {
+    margin: 0;
+  }
+
+  .footer {
+    padding: 5rem 0.5rem;
+  }
+
+  .contact {
+    font-size: 2.5rem;
+  }
+}
+
+/**************************/
+/* BELOW 560px  */
+/**************************/
+@media (max-width: 35em) {
+  .header {
+    margin-top: 13rem;
+  }
+
+  /* .heading-primary {
+    font-size: 5.5rem;
+  } */
+
+  .name-kanji {
+    font-size: 4.5rem;
+  }
+
+  .heading-secondary {
+    font-size: 2rem;
+  }
+
+  .detail {
+    font-size: 0.8rem;
+  }
+
+  .section-skills {
+    display: initial;
+  }
+
+  .skill {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .contact {
+    display: inline-block;
+    align-items: center;
+    padding: 2rem 0;
+    font-size: 1.2rem;
+  }
+
+  .br-sm {
+    display: none;
+  }
+
+  .copyright {
+    font-size: 0.5rem;
+  }
+}
