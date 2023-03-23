@@ -3,29 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- <meta name="description" container="" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" href="img/favicon.png" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@600;700;800;900&display=swap"
       rel="stylesheet"
     />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
 
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/queries.css" />
-
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-<code><script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script></code>
-
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
@@ -34,12 +35,11 @@
       nomodule=""
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
     <script defer src="script.js"></script>
 
     <title>Yui's portfolio</title>
   </head>
+
   <body>
     <header class="header-all">
       <nav class="nav">
@@ -51,12 +51,12 @@
               >
             </li>
             <li>
+              <a class="main-nav-link mobile-menu-item" href="#work">work</a>
+            </li>
+            <li>
               <a class="main-nav-link mobile-menu-item" href="#aboutme"
                 >about me</a
               >
-            </li>
-            <li>
-              <a class="main-nav-link mobile-menu-item" href="#work">work</a>
             </li>
             <li>
               <a class="main-nav-link mobile-menu-item" href="#skill">skill</a>
@@ -65,24 +65,25 @@
         </div>
       </nav>
 
-      <!-- <button class="btn-mobile-nav"> -->
       <ion-icon class="icon-mobile-open" name="menu-outline"></ion-icon>
-      <!-- <ion-icon class="icon-mobile-close" name="close-outline"></ion-icon> -->
-      <!-- </button> -->
 
       <section class="container section-header">
-       
-        <!-- <div class="header"> -->
-          
-        <h1 class="heading-primary" data-aos="fade-left"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine">Yui Iida</h1>
-        <p class="name-kanji" data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine">飯田　唯</p>
-    
- 
-     
+        <h1
+          class="heading-primary"
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
+          Yui Iida
+        </h1>
+        <p
+          class="name-kanji"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
+          飯田　唯
+        </p>
       </section>
     </header>
 
@@ -94,30 +95,225 @@
         <div class="introduce-detail">
           <img src="img/yuipic.jpg" class="mypic" alt="Yui's profile picture" />
           <div class="intro-text">
-          <p class="introduce-text">
-            I am Yui Iida, highly self-motivated designer/front-end developer, to pursuing a long-term career change in tech environment with 10 years of hands-on experience of working in the fashion industry.
-          </p>
-        
-           <p calass="skill-icons">
-          
-            
-            <i class="fa-brands fa-js icon fa-3x"></i>
-            <i class="fa-brands fa-html5 icon fa-3x"></i>
-            <i class="fa-brands fa-css3-alt icon fa-3x" ></i>
-            <i class="fa-brands fa-node-js icon fa-3x" ></i>
-            <i class="fa-brands fa-react icon fa-3x" ></i>
-            <i class="fa-brands fa-python icon fa-3x" ></i>
-            <i class="fa-brands fa-bootstrap icon fa-3x" ></i>
-            <i class="fa-brands fa-github icon fa-3x" ></i>
-            <i class="fa-brands fa-npm icon fa-3x" ></i>
-           </p>
+            <p class="introduce-text">
+              I am Yui Iida, highly self-motivated front-end developer from
+              Japan, to pursuing a long-term career change in tech environment
+              with 10 years of experience of working in the fashion industry.
+            </p>
+
+            <p calass="skill-icons">
+              <i class="fa-brands fa-js icon fa-3x"></i>
+              <i class="fa-brands fa-react icon fa-3x"></i>
+              <i class="fa-brands fa-html5 icon fa-3x"></i>
+              <i class="fa-brands fa-css3-alt icon fa-3x"></i>
+              <i class="fa-brands fa-node-js icon fa-3x"></i>
+              <i class="fa-brands fa-python icon fa-3x"></i>
+              <i class="fa-brands fa-bootstrap icon fa-3x"></i>
+              <i class="fa-brands fa-github icon fa-3x"></i>
+              <i class="fa-brands fa-npm icon fa-3x"></i>
+              <i class="fa-brands fa-adobe icon fa-3x"></i>
+            </p>
           </div>
         </div>
       </section>
 
+      <!-- work section -->
+      <section class="container" id="work">
+        <span class="subheading">with tech skills I have gained</span>
+        <h2 class="heading-secondary">My Works</h2>
+
+        <div class="works">
+          <div class="work">
+            <img
+              src="img/work11.jpg"
+              class="work-img"
+              alt="screenshot of my work"
+            />
+            <div class="work-links">
+              <div class="btn">
+                <a
+                  class="works-link"
+                  href="https://github.com/Yui-Iida/React-filmseries-finder"
+                  target="”_blank”"
+                  >Film&Series Finder(coming soon)</a
+                >
+              </div>
+              <div class="btn">
+                <a
+                  class="works-link"
+                  href="https://github.com/Yui-Iida/React-filmseries-finder"
+                  target="”_blank”"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <p class="work-detail">
+              React, MaterialUI, CSS, The Movie Database API, Emotion, axios
+            </p>
+          </div>
+
+          <div class="work">
+            <img
+              src="img/work10.jpg"
+              class="work-img"
+              alt="screenshot of my work"
+            />
+            <div class="work-links">
+              <div class="btn">
+                <a
+                  class="works-link"
+                  href="https://yui-iida.github.io/Todo-app-React/"
+                  target="”_blank”"
+                  >Multiple ToDo App</a
+                >
+              </div>
+              <div class="btn">
+                <a
+                  class="works-link"
+                  href="https://github.com/Yui-Iida/Todo-app-React"
+                  target="”_blank”"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <p class="work-detail">React, ChakraUI, Emotion, CSS, Figma</p>
+          </div>
+
+          <div class="work">
+            <img
+              src="img/work08.jpg"
+              class="work-img"
+              alt="screenshot of my work"
+            />
+            <div class="work-links">
+              <div class="btn">
+                <a
+                  class="works-link"
+                  href="https://travel-nodeapp-yui.herokuapp.com/"
+                  target="”_blank”"
+                  >Travel Plan App</a
+                >
+              </div>
+              <div class="btn">
+                <a
+                  class="works-link"
+                  href="https://github.com/Yui-Iida/udacity-05-TravelApp"
+                  target="”_blank”"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <p class="work-detail">
+              HTML, CSS, JavaScript, Node.js, npm, Webpack, jest, Geonames API,
+              Heroku
+            </p>
+          </div>
+
+          <!-- <div class="work">
+            <a href="#" class="comingsoon-img">
+              <img
+                src="img/work09.jpg"
+                class="work-img work-02"
+                alt="screenshot of my work"
+              />
+            </a>
+            <div class="btn">
+              <a
+                class="works-link"
+                href="https://travel-nodeapp-yui.herokuapp.com/"
+                target="”_blank”"
+                >Flask Blog App</a
+              >
+            </div>
+
+            <p class="work-detail coming">
+              Python, Flask, HTML, CSS, Bootstrap
+            </p>
+          </div> -->
+
+          <div class="work">
+            <img
+              src="img/work01.jpg"
+              class="work-img work-02"
+              alt="screenshot of my work"
+            />
+            <div class="work-links">
+              <div class="btn">
+                <a
+                  class="works-link"
+                  href="https://weather-journal-yi.netlify.app/"
+                  target="”_blank”"
+                  >Weather Journal App</a
+                >
+              </div>
+              <div class="btn">
+                <a
+                  class="works-link"
+                  href="https://github.com/Yui-Iida/udacity-03-WeatherJournalApp"
+                  target="”_blank”"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <p class="work-detail">
+              JavaScript, Node.js, HTML, CSS, npm, OpenWeatherMap API, Netlify
+            </p>
+          </div>
+
+          <!-- <div class="work">
+            <a href="#" class="comingsoon-img">
+              <img
+                src="img/work06.jpg"
+                class="work-img"
+                alt="screenshot of my work"
+              />
+            </a>
+            <div class="btn">
+              <a class="works-link" href="" target="”_blank”"
+                >User Management App</a
+              >
+            </div>
+            <p class="work-detail">React, TypeScript, npm, CSS, ChakraUI</p>
+          </div> -->
+
+          <!-- <div class="work work-02">
+            <img
+              src="img/work02.jpg"
+              class="work-img"
+              alt="screenshot of my work"
+            />
+            <div class="btn">
+              <a
+                class="works-link"
+                href="https://omnifood-yi.netlify.app/"
+                target="”_blank”"
+                >Omnifood App</a
+              >
+            </div>
+            <p class="work-detail">HTML, CSS, JavaScript, npm</p>
+          </div> -->
+
+          <!-- <div class="work">
+            <img
+              src="img/work03.jpg"
+              class="work-img"
+              alt="screenshot of my work"
+            />
+            <div class="btn">
+              <a
+                class="works-link"
+                href="https://pig-game-yi.netlify.app/"
+                target="”_blank”"
+                >Pig-game App</a
+              >
+            </div>
+            <p class="work-detail">HTML, CSS, JavaScript, Netlify</p>
+          </div>
+        </div> -->
+      </section>
+
       <!-- about me section  -->
       <section class="container" id="aboutme">
-        <!-- <div class="heading-box"> -->
         <div class="number-text-box1">
           <span class="subheading">about me</span>
           <h2 class="heading-secondary margin-bottom-sm">What I have done?</h2>
@@ -132,36 +328,29 @@
         </div>
 
         <div class="aboutme">
-          <!-- <div class="container aboutme-detail"> -->
-            
           <!-- 01 -->
           <div class="container-num">
             <div class="number-text-box">
-              <!-- <div class="sm-header"> -->
               <div class="number">01</div>
               <h3 class="heading-tertiary">Love for Fashion</h3>
-              <!-- </div> -->
-              <div class="detail" ontouchstart=””>
+              <div class="detail" ontouchstart="">
                 <p class="detail-en">
                   Since I was a child, I always wanted to be a fashion designer.
-                  I studied at a professional training college of fashion
-                  and worked as a fashion designer and buyer for 6
-                  years.<br />
+                  I studied at a professional training college of fashion and
+                  worked as a fashion designer and buyer for 6 years.<br />
                   Here are some examples of tasks I had to complete:<br />
-                  <!-- <li>の方がベター？</li> -->
-                  Designing women's clothes, shoes and bags for the original women's brand
-                  Ethique. It was sold on Rakuten, Cecile and so
+                  Designing women's clothes, shoes and bags for the original
+                  women's brand Ethique. It was sold on Rakuten, Cecile and so
                   on.<br />
 
-                  Planning the products including the whole budget and orders for
-                  each season.<br />
+                  Planning the products including the whole budget and orders
+                  for each season.<br />
                   Buying women's fashion items in China and South Korea.<br />
                   Styling and coordinating photo shootings for websites and
                   catalogs.
                 </p>
-
                 <p class="detail-jp">
-                  子供の頃からファッションデザイナーになりたかった私は、上田安子服飾専門学校で<br / >
+                  子供の頃からファッションデザイナーになりたかった私は、上田安子服飾専門学校で<br />
                   ３年間ファッションデザインを学び、大阪のアパレル会社でデザイナー・マーチャンダイザー等として約６年働きました。<br />
                   業務内容の例:<br />
                   洋服、靴、バッグ等ウィメンズアイテム全盤の企画・デザイン(楽天、セシールなどで販売)<br />
@@ -171,64 +360,63 @@
                 </p>
               </div>
             </div>
-
             <div class="number-img">
               <img
-              s src="img/aboutme01.jpeg"
+                src="img/aboutme01.jpeg"
                 class="pc number-img"
                 alt="me at london fashion week"
               />
-              <img src="img/aboutme01.jpeg" class="sp"  alt="picture for smartphone" />
+              <img
+                src="img/aboutme01.jpeg"
+                class="sp"
+                alt="picture for smartphone"
+              />
             </div>
           </div>
 
           <!-- 02 -->
-
           <div class="container-num number-flex">
-            
-              
-              <div class="number-img">
-                <img
-                  src="img/aboutme02.jpeg"
-                  class="pc number-img"
-                  alt="on the street"
-                />
-                <!-- <img src="img/aboutme02.jpeg" class="sp sp-2"  alt="picture for smartphone" /> -->
+            <div class="number-img">
+              <img
+                src="img/aboutme02.jpeg"
+                class="pc number-img"
+                alt="on the street"
+              />
             </div>
-
-         
             <div class="number-text-box">
               <div class="number">02</div>
               <h3 class="heading-tertiary">From Japan to Europe</h3>
-
-              <div class="detail" ontouchstart=””>
+              <div class="detail" ontouchstart="">
                 <p class="detail-en">
-                  I not only had a dream of becoming a designer, but I also dreamed of living in Europe. So I moved to the UK at the
+                  I not only had a dream of becoming a designer, but I also
+                  dreamed of living in Europe. So I moved to the UK at the
                   beginning of 2016 and studied English and fashion marketing in
                   London.<br />
                   Since 2017, I have lived in Germany and been developing my
                   life now.<br />
                 </p>
                 <p class="detail-jp">
-                  デザイナーになるという夢と同様に、ヨーロッパに住むというのも長年の夢でした。<br>
+                  デザイナーになるという夢と同様に、ヨーロッパに住むというのも長年の夢でした。<br />
                   特に文化やファッションなどで影響を受けたロンドンに２０１６年頭に留学、英語とファッションマーケティングを学びました。そして２０１７年１０月より拠点をドイツに移して生活しています。
                 </p>
               </div>
             </div>
-
-            <img src="img/aboutme02.jpeg" class="sp sp-2"  alt="picture for smartphone" />
-             
+            <img
+              src="img/aboutme02.jpeg"
+              class="sp sp-2"
+              alt="picture for smartphone"
+            />
           </div>
 
           <!-- 03 -->
-          <div class="container-num  number-3">
+          <div class="container-num number-3">
             <div class="number-text-box">
               <div class="number">03</div>
               <h3 class="heading-tertiary">In Berlin</h3>
-              <div class="detail" ontouchstart=””>
+              <div class="detail" ontouchstart="">
                 <p class="detail-en">
-                  After moving to Germany, I have worked as a fashion stylist for the
-                  TV production(rbb Berlin/Brandenburg), events(TEDx,
+                  After moving to Germany, I have worked as a fashion stylist
+                  for the TV production(rbb Berlin/Brandenburg), events(TEDx,
                   Berlinale), photoshoots and so on. As well as fashion
                   coordinator for photo shoot in Berlin with European artists
                   for Japanese magazine, buying vintage and antique items for
@@ -236,7 +424,7 @@
                   <br />
                   I always like creating something and work in a team to build
                   something amazing. That is why I am stepping into my new
-                  life...!
+                  carrer...!
                 </p>
                 <p class="detail-jp">
                   ベルリンに移住してから、スタイリストとしてテレビ(rbb
@@ -248,252 +436,47 @@
               </div>
             </div>
             <img
-             src="img/aboutme03.jpeg"
+              src="img/aboutme03.jpeg"
               class="pc number-img"
               alt="styling at TV studio"
             />
-            <img src="img/aboutme03.jpeg" class="sp"  alt="picture for smartphone" />
-
+            <img
+              src="img/aboutme03.jpeg"
+              class="sp"
+              alt="picture for smartphone"
+            />
           </div>
         </div>
       </section>
-
-
-      <!-- work section -->
-      <section class="container" id="work">
-        <span class="subheading">with new skills</span>
-        <h2 class="heading-secondary">My Works</h2>
-
-        <div class="works">
-          <div class="work work-01">
-            <img
-              src="img/work08.jpg"
-              class="work-img"
-              alt="screenshot of my work"
-            />
-            <div class="btn">
-              <a
-                class="works-link"
-                href="https://travel-nodeapp-yui.herokuapp.com/"
-                target="”_blank”"
-                >Travel Plan app</a
-              >
-            </div>
-            <p class="work-detail">
-              HTML, CSS, JavaScript, Node.js, npm, Webpack, Geonames API, Heroku
-            </p>
-          </div>
-
-       
-            <div class="work work-01">
-            <a href="#" class="comingsoon-img">
-              <img
-                src="img/work09.jpg"
-                class="work-img work-02"
-                alt="screenshot of my work"
-              />
-              </a>
-            
-              <p class="work-detail coming">
-                HTML, CSS, Bootstrap, Python, Flask, npm
-              </p>
-              </div>
-           
-
-
-          <div class="work work-01">
-            <img
-              src="img/work01.jpg"
-              class="work-img work-02"
-              alt="screenshot of my work"
-            />
-            <div class="btn">
-              <a
-                class="works-link"
-                href="https://weather-journal-yi.netlify.app/"
-                target="”_blank”"
-                >Weather journal app</a
-              >
-            </div>
-            <p class="work-detail">
-              HTML, CSS, JavaScript, Node.js, npm, OpenWeatherMap API, Netlify
-            </p>
-            </div>
-        
-
-        <!-- <div class="work"> -->
-          <div class="work work-02">
-            <img
-              src="img/work02.jpg"
-              class="work-img"
-              alt="screenshot of my work"
-            />
-            <div class="btn">
-              <a
-                class="works-link"
-                href="https://omnifood-yi.netlify.app/"
-                target="”_blank”"
-                >Omnifood app</a
-              >
-            </div>
-            <p class="work-detail">
-              HTML, CSS, JavaScript, npm
-            </p>
-          </div>
-         
-
-          <div class="work">
-            <img
-              src="img/work03.jpg"
-              class="work-img"
-              alt="screenshot of my work"
-            />
-            <div class="btn">
-              <a
-                class="works-link"
-                href="https://pig-game-yi.netlify.app/"
-                target="”_blank”"
-                >Pig-game app</a
-              >
-            </div>
-            <p class="work-detail">
-              HTML, CSS, JavaScript, Netlify
-            </p>
-          </div>
-
-
-            <div class="work">
-              <img
-                src="img/work04.jpg"
-                class="work-img"
-                alt="screenshot of my work"
-              />
-              <div class="btn">
-                <a
-                  class="works-link"
-                  href="https://todo-yui.netlify.app/"
-                  target="”_blank”"
-                  >To Do List</a
-                >
-              </div>
-              <p class="work-detail">
-                HTML, CSS, JavaScript, Netlify
-              </p>
-        </div>
-
-          
-          <div class="work">
-            <img
-              src="img/work06.jpg"
-              class="work-img"
-              alt="screenshot of my work"
-            />
-            <div class="btn">
-              <a
-                class="works-link"
-                href=""
-                target="”_blank”"
-                >User management App</a
-              >
-            </div>
-            <p class="progress">- Work in Progress -</p>
-            <p class="work-detail">
-              React.js, TypeScript, CSS, Chakra UI
-            </p>
-            </div>
-
-
-            <div class="work">
-              <img
-                src="img/work07.jpg"
-                class="work-img"
-                alt="screenshot of my work"
-              />
-              <div class="btn">
-                <a
-                  class="works-link"
-                  href="https://udacity01blog-yui.netlify.app"
-                  target="”_blank”"
-                  >Blog</a
-                >
-              </div>
-              <p class="work-detail">
-                HTML, CSS, Netlify</p>
-              </p>
-              </div>
-            </div>
-
-   </div>
-      </section>
-
-      <section class="container" id="gallery">
-        <span class="subheading">What I have learned</span>
-        <h2 class="heading-secondary">Certificates</h2>
-        <div class="gallery grid-container certificate">
-
-          <figure class="gallery-item certificate">
-            <img src="./img/certificate-01.jpg" alt="Certificate" />
-            <div class="certificate-detail">
-              Build Responsive Real-World Websites</br>with HTML and CSS</br>
-              <div class="certificate-length">Course length: 37.5h</div>
-            </div>
-          </figure>
-          <figure class="gallery-item certificate">
-            <img src="./img/certificate-02.jpg" alt="Certificate" />
-            <div class="certificate-detail">
-              The Complete JavaScript Course 2022:</br>From Zero to Expert!</br>
-              <div class="certificate-length">Course length: 69h</div>
-            </div>
-          </figure>
-          <figure class="gallery-item certificate">
-            <img src="./img/certificate-03.jpg" alt="Certificate" />
-            <div class="certificate-detail">
-              Introduction to React from fundation</br> of modern JavaScript</br>
-              <div class="certificate-length">Course length: 6h</div>
-            </div>
-          </figure>
-          <figure class="gallery-item certificate">
-            <img src="./img/certificate-04.jpg" alt="Certificate" />
-            <div class="certificate-detail">
-              Complete React advanced course</br>to have more fun</br>
-              <div class="certificate-length">Course length: 8h</div>
-            </div>
-          </figure>
-
-          </div>
-          </section>
-
 
       <!-- skills section  -->
       <section class="container skills" id="skill">
         <span class="subheading">Skills</span>
-
         <h2 class="heading-secondary">What I can do</h2>
+
+        <div class="tech-skills">
+          <i class="fa-brands fa-js icon fa-5x tech-icons"></i>
+          <i class="fa-brands fa-react icon fa-5x tech-icons"></i>
+          <i class="fa-brands fa-html5 icon fa-5x tech-icons"></i>
+          <i class="fa-brands fa-css3-alt icon fa-5x tech-icons"></i>
+          <i class="fa-brands fa-node-js icon fa-5x tech-icons"></i>
+          <i class="fa-brands fa-python icon fa-5x tech-icons"></i>
+          <i class="fa-brands fa-bootstrap icon fa-5x tech-icons"></i>
+          <i class="fa-brands fa-github icon fa-5x tech-icons"></i>
+          <i class="fa-brands fa-npm icon fa-5x tech-icons"></i>
+          <i class="fa-brands fa-figma icon fa-5x tech-icons"></i>
+        </div>
+
         <div class="section-skills">
-          <div class="skill">
-            <ion-icon
-              class="skill-icon"
-              name="color-palette-outline"
-            ></ion-icon>
-            <div class="skill-grid">
-              <p class="skill-text">Design</p>
-
-              <p class="star">★★★★✩</p>
-              <p class="skill-detail">
-                Any kind of design, especially good balanced with<br/> sophisticated
-                and casual.
-              </p>
-            </div>
-          </div>
-
           <div class="skill">
             <ion-icon class="skill-icon" name="people-outline"></ion-icon>
             <div class="skill-grid">
               <p class="skill-text">Team Work</p>
-              <p class="star">★★★★★</p>
               <p class="skill-detail">
-                I have worked in an international team with listening<br/> others and
-                exchange views.
+                I love creating something on team, improve and inspire each
+                other.
+                <br />
+                I have worked in international teams with exchanging views.
               </p>
             </div>
           </div>
@@ -502,72 +485,28 @@
             <ion-icon class="skill-icon" name="search-outline"></ion-icon>
             <div class="skill-grid">
               <p class="skill-text">Self Lerning</p>
-              <p class="star">★★★★★</p>
               <p class="skill-detail">
-                I Love learning new things and improving my skills.
+                I Love learning new things and improving my skills. (As well as
+                learning new hobbies.)
               </p>
             </div>
           </div>
 
           <div class="skill">
-            <ion-icon class="skill-icon" name="logo-javascript"></ion-icon>
+            <ion-icon
+              class="skill-icon"
+              name="color-palette-outline"
+            ></ion-icon>
             <div class="skill-grid">
-              <p class="skill-text">Java Script</p>
-              <p class="skill-detail">★★★★✩</p>
+              <p class="skill-text">Design</p>
+
+              <p class="skill-detail">
+                Any kind of design, especially good balanced with sophisticated,
+                casual and user-centric. <br />(Tool: Figma, Canva, Adobe
+                Photoshop & Illustrator)
+              </p>
             </div>
           </div>
-
-          <div class="skill">
-            <ion-icon class="skill-icon" name="logo-css3"></ion-icon>
-            <div class="skill-grid">
-              <p class="skill-text">CSS/SCSS</p>
-              <p class="skill-detail">★★★★✩</p>
-            </div>
-          </div>
-
-          <div class="skill">
-            <ion-icon class="skill-icon" name="logo-html5"></ion-icon>
-            <div class="skill-grid">
-              <p class="skill-text">HTML5</p>
-              ★★★★✩
-            </div>
-          </div>
-
-          <div class="skill">
-            <ion-icon class="skill-icon" name="logo-python"></ion-icon>
-            <div class="skill-grid">
-              <p class="skill-text">Python</p>
-              <p class="skill-detail">★★✩✩✩</p>
-            </div>
-          </div>
-
-          <div class="skill">
-            <ion-icon class="skill-icon" name="logo-nodejs"></ion-icon>
-            <div class="skill-grid">
-              <p class="skill-text">Node.js</p>
-              <p class="skill-detail">★★✩✩✩</p>
-            </div>
-          </div>
-
-          <div class="skill">
-            <ion-icon class="skill-icon" name="logo-react"></ion-icon>
-            <div class="skill-grid">
-              <p class="skill-text">React</p>
-              <p class="skill-detail">★★✩✩✩</p>
-            </div>
-          </div>
-
-          
-
-          <div class="skill">
-            <ion-icon class="skill-icon" name="chatbubbles-outline"></ion-icon>
-            <div class="skill-grid">
-              <p class="skill-text">Language</p>
-              <p class="skill-detail">Japanese, English, German</p>
-            </div>
-          </div>
-
-        
         </div>
       </section>
     </main>
@@ -610,7 +549,7 @@
         </ul>
 
         <p class="copyright">
-          Copyright &copy; <span class="year">2022 </span> by Yui Iida. All
+          Copyright &copy; <span class="year">2023</span> by Yui Iida. All
           rights reserved.
         </p>
       </div>

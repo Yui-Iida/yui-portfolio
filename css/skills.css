@@ -1,0 +1,45 @@
+.section-skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  row-gap: 5rem;
+  margin-bottom: 50rem;
+}
+
+.tech-skills {
+  margin-bottom: 8rem;
+}
+
+.tech-icons {
+  margin: 2rem;
+}
+
+.skills {
+  margin: 0rem 10rem 20rem 10rem;
+}
+
+.skill-icon {
+  color: #fff;
+  background-color: #f4d3e9;
+  height: 3.2rem;
+  width: 3.2rem;
+  margin-bottom: 2.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.skill-text {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.star {
+  font-family: sans-serif;
+  margin-bottom: 1rem;
+}
+
+.skill-detail {
+  font-family: sans-serif;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}

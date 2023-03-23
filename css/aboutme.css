@@ -1,0 +1,87 @@
+.aboutme {
+  margin-bottom: 20rem;
+  align-items: center;
+}
+
+.container-num {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4rem;
+  margin-bottom: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.subheading {
+  display: block;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #dd2d67;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.75px;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-bottom: 5rem;
+}
+
+.lang-icon {
+  color: #da678d;
+  height: 1.2rem;
+  width: 1.2rem;
+  background-color: #f4d3e9;
+  border-radius: 50%;
+}
+
+.language {
+  color: #777;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+}
+
+.number-img {
+  width: 100%;
+}
+
+.lazy-img {
+  width: 0%;
+}
+
+.number {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 8.2rem;
+  font-weight: 900;
+  color: #eee;
+}
+
+.detail-en {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.detail-jp {
+  display: none;
+}
+
+.detail:hover .detail-en {
+  display: none;
+}
+
+.detail:hover .detail-jp {
+  display: block;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+.pc {
+  display: block !important;
+}
+
+.sp {
+  display: none !important;
+}

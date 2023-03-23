@@ -1,0 +1,32 @@
+.section-header {
+  margin-top: 40rem;
+  margin-left: -3rem;
+  margin-bottom: 15rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.heading-primary {
+  margin-top: 30rem;
+  font-family: 'Noto Serif Display', serif;
+  font-size: 18vw;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.name-kanji {
+  font-family: 'Noto Serif Display', serif;
+  padding: 0;
+  margin-top: -1.8rem;
+  margin-bottom: 35rem;
+  font-size: 12vw;
+  font-weight: 900;
+  color: rgba(244, 211, 233, 0.548);
+  letter-spacing: 2px;
+}
+
+.is-animation {
+  padding: 2em 0;
+  font-size: 1em;
+}
